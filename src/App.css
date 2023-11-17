@@ -2,12 +2,15 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f6f7fb;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
 }
 
 .todo-container {
   width: 90%;
   max-width: 800px;
-  margin: 50px auto;
   background-color: #fff;
   padding: 30px;
   border-radius: 12px;
@@ -25,6 +28,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 800px;
 }
 
 input[type="text"],
@@ -45,14 +49,20 @@ input[type="text"]:focus {
 }
 
 button {
-  background-color: #2ecc71;
-  color: #fff;
+  background-color: #fff;
+  color: #2ecc71;
+  border: 1px solid #2ecc71; 
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #27ae60;
+  background-color: #2ecc71;
+  color: #fff;
+  border-color: #2ecc71; 
 }
 
 .tasks-container {
@@ -83,7 +93,7 @@ button:hover {
 }
 
 .print-button {
-  margin-top: 20px; /* Adjust spacing from other elements */
+  margin-top: 20px; 
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
