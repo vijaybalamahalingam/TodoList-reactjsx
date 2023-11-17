@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f7fb;
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="text"],
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  background-color: #f9f9f9;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #e1e3e8;
+}
+
+button {
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+.tasks-container {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.task {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f2f4f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.task:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.task h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task p {
+  color: #666;
+}
+
+.print-button {
+  margin-top: 20px; /* Adjust spacing from other elements */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2ecc71;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.print-button:hover {
+  background-color: #27ae60;
+}
