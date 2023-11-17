@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './App.css';
 
@@ -29,7 +28,7 @@ const TodoList = () => {
       setTaskDescription('');
       setTaskTime('');
       setIsLoading(false);
-    }, 3000); 
+    }, 3000);
   };
 
   const handlePrint = () => {
